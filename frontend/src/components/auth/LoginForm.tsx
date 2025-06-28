@@ -40,21 +40,6 @@ const LoginForm: React.FC = () => {
     }
   };
 
-  const demoCredentials = [
-    {
-      type: 'Admin User',
-      email: 'admin@example.com',
-      password: 'admin123',
-      description: 'Full access to all features'
-    },
-    {
-      type: 'Demo User',
-      email: 'demo@example.com',
-      password: 'demo123',
-      description: 'Standard user access'
-    }
-  ];
-
   const features = [
     {
       icon: '📊',
@@ -282,46 +267,6 @@ const LoginForm: React.FC = () => {
                 </Link>
               </div>
             </motion.form>
-
-            {/* Demo Credentials */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4 }}
-              className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl p-6 border border-blue-100"
-            >
-              <div className="flex items-center mb-4">
-                <CheckCircleIcon className="h-5 w-5 text-blue-600 mr-2" />
-                <h3 className="text-sm font-semibold text-blue-900">Demo Credentials</h3>
-              </div>
-              <div className="space-y-3">
-                {demoCredentials.map((cred, index) => (
-                  <div key={index} className="bg-white/70 rounded-lg p-3">
-                    <div className="flex items-center justify-between mb-1">
-                      <span className="text-sm font-medium text-gray-900">{cred.type}</span>
-                      <button
-                        type="button"
-                        onClick={() => {
-                          // Auto-fill form
-                          const emailField = document.querySelector('input[type="email"]') as HTMLInputElement;
-                          const passwordField = document.querySelector('input[type="password"], input[type="text"]') as HTMLInputElement;
-                          if (emailField) emailField.value = cred.email;
-                          if (passwordField) passwordField.value = cred.password;
-                        }}
-                        className="text-xs text-blue-600 hover:text-blue-800 font-medium"
-                      >
-                        Use this
-                      </button>
-                    </div>
-                    <div className="text-xs text-gray-600 space-y-1">
-                      <div>Email: <code className="bg-gray-100 px-1 rounded">{cred.email}</code></div>
-                      <div>Password: <code className="bg-gray-100 px-1 rounded">{cred.password}</code></div>
-                      <div className="text-gray-500">{cred.description}</div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </motion.div>
 
             {/* Sign Up Link */}
             <div className="text-center">
