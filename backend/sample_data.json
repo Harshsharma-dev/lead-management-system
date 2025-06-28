@@ -1,0 +1,42 @@
+[
+  {
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "phone": "+1234567890",
+    "lead_source": "website",
+    "status": "new_lead",
+    "notes": "Interested in our premium package"
+  },
+  {
+    "name": "Jane Smith",
+    "email": "jane.smith@example.com",
+    "phone": "+1234567891",
+    "lead_source": "social_media",
+    "status": "lead_sent",
+    "notes": "Contacted via LinkedIn"
+  },
+  {
+    "name": "Bob Johnson",
+    "email": "bob.johnson@example.com",
+    "phone": "+1234567892",
+    "lead_source": "referral",
+    "status": "deal_done",
+    "notes": "Closed deal worth $5000"
+  },
+  {
+    "name": "Alice Brown",
+    "email": "alice.brown@example.com",
+    "phone": "+1234567893",
+    "lead_source": "google_ads",
+    "status": "new_lead",
+    "notes": "Clicked on our Google ad"
+  },
+  {
+    "name": "Charlie Wilson",
+    "email": "charlie.wilson@example.com",
+    "phone": "+1234567894",
+    "lead_source": "email_marketing",
+    "status": "lead_sent",
+    "notes": "Responded to email campaign"
+  }
+] 
